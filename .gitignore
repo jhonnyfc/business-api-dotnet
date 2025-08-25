@@ -1,0 +1,64 @@
+﻿## .NET build artifacts
+bin/
+obj/
+out/
+artifacts/
+Generated_Code/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.vsp
+*.vspx
+
+## ASP.NET and Azure related
+*.PublishSettings
+App_Data/
+publish/
+local.settings.json  # For Azure Functions/local dev secrets
+
+## IDE files
+.vs/
+.vscode/
+.idea/
+
+## Logs and reports
+*.log
+logs/
+TestResults/
+*.coverage
+*.coveragexml
+coverage/
+
+## NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+## Rider / Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Node (if using frontend frameworks)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Azure Pipelines
+azure-pipelines.yml
+.azdo/
+
+## Optional: Include these if using Docker, Terraform, etc.
+# docker-compose.override.yml
+# terraform.tfstate
+# terraform.tfstate.backup
+
+# Others
+*.dbmdl
+ScaffoldingReadMe.txt

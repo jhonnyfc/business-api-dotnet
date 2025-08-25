@@ -1,0 +1,6 @@
+@poroject_777_HostAddress = http://localhost:5228
+
+GET {{poroject_777_HostAddress}}/business/
+Accept: application/json
+
+###

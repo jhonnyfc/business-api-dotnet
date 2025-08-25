@@ -1,0 +1,37 @@
+services:
+  mysql-db-seven:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysql123
+      - MYSQL_DATABASE=mydb
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=myuser123
+    ports:
+      - "3377:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - mysql-net
+    restart: always
+
+  phpmyadmin-seven:
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      - PMA_HOST=mysql-db-seven
+      - PMA_USER=myuser
+      - PMA_PASSWORD=myuser123
+    ports:
+      - "8077:80"
+    depends_on:
+      - mysql-db-seven
+    networks:
+      - mysql-net
+    restart: always
+
+networks:
+  mysql-net:
+    driver: bridge
+
+volumes:
+  mysql-data:
+    driver: local
