@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace poroject_777.DataAccess
+namespace poroject_777.src.DataAccess
 {
     public class DataContext : BaseDataContext
     {

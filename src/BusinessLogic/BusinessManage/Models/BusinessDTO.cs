@@ -1,8 +1,7 @@
-﻿namespace poroject_777.BusinessLogic.BusinessSearch.Models
+﻿namespace poroject_777.src.BusinessLogic.BusinessManage.Models
 {
-    public class Business
+    public class BusinessDTO
     {
-        public int Id { get; set; }
         public string BusinessNikname { get; set; }
         public string Telf { get; set; }
         public DateTime JoiningDate { get; set; }

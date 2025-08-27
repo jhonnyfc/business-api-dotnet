@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using poroject_777.BusinessLogic.BusinessSearch.Models;
+using poroject_777.src.BusinessLogic.BusinessSearch.Models;
 
-namespace poroject_777.DataAccess
+namespace poroject_777.src.DataAccess
 {
     public abstract class BaseDataContext : DbContext
     {
@@ -10,7 +10,7 @@ namespace poroject_777.DataAccess
         {
         }
 
-        public override DbSet<T> Set<T>() where T : class
+        public DbSet<T> GetSet<T>() where T : class
         {
             return Set<T>();
         }

@@ -1,11 +1,13 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using poroject_777.BusinessLogic.Interfaces.Repositories;
-using poroject_777.DataAccess;
-using poroject_777.DataAccess.Repositories;
+using poroject_777.src.BusinessLogic.Interfaces.Repositories;
+using poroject_777.src.DataAccess;
+using poroject_777.src.DataAccess.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 
 var connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
 builder.Services.AddDbContext<DataContext>(options => options.UseMySQL(connectionString));

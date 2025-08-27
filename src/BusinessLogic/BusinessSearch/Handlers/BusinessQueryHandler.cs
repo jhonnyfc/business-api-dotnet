@@ -1,10 +1,10 @@
 ﻿using MediatR;
-using poroject_777.BusinessLogic.BusinessSearch.Models;
-using poroject_777.BusinessLogic.BusinessSearch.Queries;
-using poroject_777.DataAccess;
-using poroject_777.DataAccess.Repositories;
+using poroject_777.src.BusinessLogic.BusinessSearch.Models;
+using poroject_777.src.BusinessLogic.BusinessSearch.Queries;
+using poroject_777.src.DataAccess;
+using poroject_777.src.DataAccess.Repositories;
 
-namespace poroject_777.BusinessLogic.BusinessSearch.Handlers
+namespace poroject_777.src.BusinessLogic.BusinessSearch.Handlers
 {
     public class BusinessQueryHandler : IRequestHandler<BusinessQuery, IEnumerable<Business>>
     {

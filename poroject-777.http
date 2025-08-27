@@ -4,3 +4,57 @@ GET {{poroject_777_HostAddress}}/business/
 Accept: application/json
 
 ###
+
+GET {{poroject_777_HostAddress}}/business/1
+Accept: application/json
+
+###
+
+POST {{poroject_777_HostAddress}}/business/
+Accept: application/json
+Content-Type:application/json
+
+{
+  "businessNikname": "TechNova",
+  "telf": "+353-123456789",
+  "joiningDate": "2023-01-15T00:00:00",
+  "leavingDate": "2025-08-25T00:00:00",
+  "updatedAt": "2025-08-25T13:00:00",
+  "description": "Innovative tech solutions for modern businesses.",
+  "instaLink": "https://instagram.com/technova",
+  "facebookLink": "https://facebook.com/technova",
+  "linkedInLink": "https://linkedin.com/company/technova",
+  "email": "contact@technova.ie",
+  "adress": "123 Innovation Drive, Dublin, Ireland",
+  "businessSector": "Information Technology"
+}
+
+###
+
+PUT {{poroject_777_HostAddress}}/business/
+Accept: application/json
+Content-Type:application/json
+
+{
+  "id": "10",
+  "businessNikname": "TechNova22",
+  "telf": "+353-123456789",
+  "joiningDate": "2023-01-15T00:00:00",
+  "leavingDate": "2025-08-25T00:00:00",
+  "updatedAt": "2025-08-25T13:00:00",
+  "description": "Innovative tech solutions for modern businesses.",
+  "instaLink": "https://instagram.com/technova",
+  "facebookLink": "https://facebook.com/technova",
+  "linkedInLink": "https://linkedin.com/company/technova",
+  "email": "contact@technova.ie",
+  "adress": "123 Innovation Drive, Dublin, Ireland",
+  "businessSector": "Information Technology"
+}
+
+###
+
+
+DELETE {{poroject_777_HostAddress}}/business/6
+Accept: application/json
+
+###
